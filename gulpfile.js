@@ -194,7 +194,7 @@ function jsWatch(cb) {
 	cb();
 }
 
-function images(cb) {
+function images(done) {
 	return src(path.src.images)
 		.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
@@ -210,19 +210,19 @@ function images(cb) {
 		.pipe(dest(path.build.images))
 		.pipe(browserSync.reload({stream: true}));
 
-	cb();
+	done();
 }
 
-function fonts(cb) {
+function fonts(done) {
 	return src(path.src.fonts)
 		.pipe(dest(path.build.fonts))
 		.pipe(browserSync.reload({stream: true}));
 
-	cb();
+	done();
 }
 
 function clean(cb) {
-	return del(path.clean);
+	del.sync(['dist/*/']);
 
 	cb();
 }
@@ -234,8 +234,6 @@ function watchFiles() {
 	gulp.watch([path.watch.images], images);
 	gulp.watch([path.watch.fonts], fonts);
 }
-
-html();
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
