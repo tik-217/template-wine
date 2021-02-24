@@ -1,0 +1,64 @@
+@import "vars";
+
+@font-face {
+	font-family: "Lora";
+	src: url("../fonts/lora/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url("../fonts/lora/static/Lora-Medium.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Lora";
+	font-style: italic;
+	src: url("../fonts/lora/Lora-Italic-VariableFont_wght.ttf");
+}
+
+*{
+	margin: 0;
+	font-family: 'Lora', serif !important;
+}
+
+body{
+	line-height: 145% !important;
+	font-size: 0.85em !important;
+}
+
+.indent{
+	padding-left: 5%;
+	padding-right: 5%;
+	max-width: 1360px;
+	margin: 0 auto;
+}
+
+.common-title{
+	text-align: center;
+	margin: 60px 0;
+	font-weight: 500;
+	font-size: 32px;
+}
+
+@import "node_modules/normalize.css/normalize.scss";
+@import "node_modules/reset-css/sass/_reset.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+
+// common style
+@import "blocks/media-common.scss";
+@import "blocks/new-header.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";
+
+/* Blocks main */
+@import "blocks/main/main-common.scss";
+@import "blocks/main/main-gallery.scss";
+@import "blocks/main/main-proba.scss";
+@import "blocks/main/main-catalog.scss";
+
+/* Blocks catalog */
+@import "blocks/catalog/ctl-content.scss";
+
+/* Blocks proba */
+@import "blocks/proba/proba.scss";

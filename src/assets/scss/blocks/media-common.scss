@@ -1,0 +1,290 @@
+/*
+	//////////	media-main
+*/
+
+/*1036*/
+
+@media screen and (min-width: 1070px){
+	/* header */
+
+	.head_items-wrapper_up_menu_mob{
+		display: none;
+	}
+
+	.head_items-wrapper_up_menu, .common-header_wrapper_menu{
+		display: flex;
+	}
+
+	/*
+
+	////  header  /////
+
+	*/
+}
+
+@media screen and (max-width: 995px){
+	.ctl-content_wrapper_carts div{
+		flex: 1 41% !important;
+	}
+}
+
+@media screen and (max-width: 1070px){
+
+	/* header */
+
+	.head_items-wrapper_up_menu, .common-header_wrapper_menu{
+		display: none !important;
+	}
+
+	.head_items-wrapper_up_menu_mob{
+		display: flex;
+		
+		img{
+			height: 25px;
+		}
+
+		nav{
+			padding-top: 50px;
+			flex-direction: column;
+			background: #fff;
+			display: flex;
+			position: absolute;
+
+			top: -460px;
+			text-align:center;
+			right: 5%;
+			width: 250px;
+			transition: 0.5s ease;
+
+			z-index: 1;
+
+			.head_items-wrapper_up_menu_mob_close{
+				height: 100%;
+				position: relative;
+
+				.close{
+					height: 30px;
+					width: 30px;
+					position: absolute;
+					top: -40px;
+					left: 210px;
+				}
+			}
+		
+			a, .auth a{
+				width: 100%;
+				padding: 20px 0;
+				text-transform: uppercase;
+				font-size: 13px;
+				text-decoration: none;
+				color: white;
+			}
+
+			a {
+				&:nth-child(3){
+					background: #D7CDA9;
+				}
+
+				&:nth-child(4){
+					background: #D3C48F;
+				}
+
+				&:nth-child(5){
+					background: #B17547;
+				}
+
+				&:nth-child(6){
+					background: #6C3D38;
+				}
+
+				&:nth-child(7){
+					background: #383941;
+				}
+			}
+
+			.auth div{
+				display: flex;
+				background: #383941;
+				align-items: center;
+				position: relative;
+
+				a{
+					display: flex;
+					justify-content: center;
+					padding: 10px 0;
+				}
+
+				img{
+					height: 25px;
+					position: absolute;
+					left: 12px;
+				}
+			}
+		}
+	}
+
+	.search {
+		position: relative;
+	
+		&::before{
+			content: '';
+			display: flex;
+			align-items: center;
+			height: 20px;
+			width: 20px;
+
+			background: url('../images/icons/icons8-menu-black.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			position: absolute;
+			transform: scaleX(0);
+		}
+	
+		input{
+			width: 100%;
+			border: none;
+			outline: none;
+			border-top: 2px solid #D3C48F;
+
+			-webkit-appearance: none;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			border-radius: 0px;
+		
+			&::placeholder{
+				color: #D3C48F;
+				font-size: 13px;
+			}
+		}
+	}
+
+	.head_items-wrapper_up_menu_mob_icons{
+		flex-wrap: nowrap;
+		display: flex;
+
+		a{
+			margin-right: 10px;
+		}
+	}
+
+	/*
+
+	////  header  /////
+
+	*/
+
+}
+
+@media screen and (max-width: 1040px){
+
+	/* proba */
+	
+	.proba-info-section {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 460px){
+	/* footer */
+
+	.flex-title-mob{
+		line-height: 110%;
+		text-align: center;
+	}
+}
+
+/*
+	//////////	media-main
+*/
+
+@media screen and (max-width: 550px){
+	.ctl-content_wrapper{
+		flex-direction: column;
+	
+		// .ctl-content_wrapper_sidebar{
+		// 	display: none;
+		// }
+
+		.ctl-content_wrapper_filter{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 0 20px;
+
+			section{
+				display: flex;
+				align-items: end;
+				margin: 0 20px 5px 0;
+
+				.ctl-content_wrapper_filter-icon{
+					height: 20px;
+					width: 20px;
+					margin: 0 5px 0 0;
+				}
+			}
+
+
+		}
+	}
+
+}
+
+@media screen and (min-width: 550px){
+	.ctl-content_wrapper_filter{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 365px){
+	.ctl-content_wrapper_carts div{
+		max-width: 130px !important;
+	}
+}
+
+@media screen and (max-width: 680px){
+	.modal-window{
+		width: 70% !important;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.modal-window{
+		width: 80% !important;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.wrap-slider .proba_content_slider div{
+
+		img{
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+		}
+
+		section{
+			background: rgba(0, 0, 0, 0.5) !important;
+
+			p{
+				padding-left: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px){
+	.slick-list{
+		// height: 300px !important;
+	}
+
+	.wrap-slider .proba_content_slider div{
+		height: initial;
+
+		section{
+
+			p{
+				padding-left: 0;
+			}
+		}
+	}
+}

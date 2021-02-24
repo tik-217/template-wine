@@ -1,0 +1,58 @@
+.wrap-slider{
+	position: relative;
+
+	.proba_content_slider{
+		// transform: translate(0, 500px);
+
+		.slick-slide{
+			padding: 0;
+		}
+
+		div{
+			// height: 500px !important;
+			transition: all .5s ease;
+
+			img{
+				height: 100% !important;
+				float: left;
+			}
+
+			.proba_content_slider_slides_description{
+				box-sizing: border-box;
+				display: table-cell;
+				height: 500px;
+				background: black;
+				color: white;
+				padding: 30px 60px 0 30px;
+
+				p{
+				    line-height: 170%;
+				}
+			}
+		
+		}
+	}
+
+	.proba_content_slider_slides_circle{
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+	    top: 0;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+
+		.slick-track{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		img{
+			height: 20px !important;
+			width: 20px !important;
+			margin: 0 0 8px;
+			cursor: pointer;
+		}
+	}
+}
