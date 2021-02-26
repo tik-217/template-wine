@@ -1,6 +1,5 @@
 .wrap{
 	display: flex;
-	flex-direction: column;
 }
 
 .ctl-content_section-title{
@@ -19,8 +18,7 @@
 
 .ctl-content_wrapper{
 	display: flex;
-	flex-direction: row;
-    align-items: flex-end;
+	margin: 0 8% 0 0;
 }
 
 .ctl-content_wrapper_sidebar{
@@ -115,7 +113,7 @@
 				justify-content: space-between;
 				align-items: baseline;
 				margin-bottom: 10px;
-			
+
 				span{
 					
 					&:first-child{

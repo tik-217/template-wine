@@ -32,7 +32,6 @@ body {
   font-weight: 500;
   font-size: 32px; }
 
-https://github.com/tik-217/template-wine.git
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -161,7 +160,7 @@ table {
 
 /*
 	//////////	media-main
-*/
+	*/
 /*1036*/
 @media screen and (min-width: 1070px) {
   /* header */
@@ -286,15 +285,27 @@ table {
     text-align: center; } }
 
 /*
-	//////////	media-main
-*/
+//////////	media-main*/
 @media screen and (max-width: 550px) {
-  .ctl-content_wrapper {
+  .wrap {
+    display: flex;
     flex-direction: column; }
+  .ctl-content_section-under_title {
+    display: block;
+    margin: 10px 0 0 0; }
+    .ctl-content_section-under_title a {
+      color: inherit;
+      text-decoration-bottom: 10px;
+      padding-right: 3px; }
+  .ctl-content_wrapper {
+    display: flex;
+    flex-direction: column; }
+    .ctl-content_wrapper .ctl-content_wrapper_sidebar {
+      display: none; }
     .ctl-content_wrapper .ctl-content_wrapper_filter {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 0 20px; }
+      margin: 0 0 10px; }
       .ctl-content_wrapper .ctl-content_wrapper_filter section {
         display: flex;
         align-items: end;
@@ -306,6 +317,8 @@ table {
 
 @media screen and (min-width: 550px) {
   .ctl-content_wrapper_filter {
+    display: none; }
+  .ctl-content_section-under_title {
     display: none; } }
 
 @media screen and (max-width: 365px) {
@@ -738,8 +751,7 @@ footer {
 */
 /* Blocks catalog */
 .wrap {
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
 
 .ctl-content_section-title {
   margin-bottom: 10px;
@@ -752,8 +764,7 @@ footer {
 
 .ctl-content_wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end; }
+  margin: 0 8% 0 0; }
 
 .ctl-content_wrapper_sidebar {
   margin: 0 10% 0 0; }
