@@ -1,21 +1,14 @@
-/*
-	main-gallery
-*/
+.gallery-slider{
 
-.gallery-slider img{
-	height: 250px;
+	img{
+		height: 250px;
+	}
+	
+	.slick-active{
+		outline: none;
+	}
+
+	.slick-slide{
+		padding: 0 5px;
+	}
 }
-
-/* slide */
-
-.slick-active{
-	outline: none;
-}
-
-.slick-slide{
-	padding: 0 5px;
-}
-
-/*
-	//////////	main-gallery
-*/

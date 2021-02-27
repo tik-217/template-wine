@@ -1,81 +1,86 @@
 /*
 	main-catalog
-*/
+	*/
 
-.catalog-cart_section{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-
-	div{
-		max-width: 200px;
-		box-shadow: 0 0 5px 2px #efefef;
-		margin: 0 20px 30px;
-		font-size: 13px;
-
+	.catalog-cart_section{
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
+		flex-wrap: wrap;
 
-		.catalog-cart_section-content{
-			padding: 0 20px;
+		div{
+			max-width: 200px;
+			box-shadow: 0 0 5px 2px #efefef;
+			margin: 0 20px 30px;
+			font-size: 13px;
 
-			h3, p{
-				margin-bottom: 20px;
-			}
-			
-			h3{
-				margin-top: 20px;
-				text-align: center;
-				font-size: 20px;
-			}
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 
-			p{
-				line-height: 140%;
-			}
+			.catalog-cart_section-content{
+				padding: 0 20px;
 
-			section {
-				display: flex;
-				justify-content: space-between;
-				align-items: baseline;
-				margin-bottom: 10px;
-			
-				span{
-					
-					&:first-child{
-						font-size: 18px;
+				h3, p{
+					margin-bottom: 20px;
+				}
+
+				h3{
+					margin-top: 20px;
+					text-align: center;
+					font-size: 20px;
+				}
+
+				p{
+					line-height: 140%;
+				}
+
+				section {
+					display: flex;
+					justify-content: space-between;
+					align-items: baseline;
+					margin-bottom: 10px;
+
+					span{
+
+						&:first-child{
+							font-size: 18px;
+						}
+
+						&:last-child{
+							color: green;
+						}
 					}
+				}
+			}
 
-					&:last-child{
-						color: green;
-					}
+			button{
+				width: 100%;
+				border: none;
+				padding: 15px 20px;
+				outline: none;
+
+				text-transform: uppercase;
+				font-size: 13px;
+				background: #000;
+				color: white;
+				cursor: pointer;
+
+				a{
+					color: white;
+					text-decoration: none;
 				}
 			}
 		}
 
-		button{
+		img{
 			width: 100%;
-			border: none;
-			padding: 15px 20px;
-			outline: none;
-
-			text-transform: uppercase;
-			font-size: 13px;
-			background: #000;
-			color: white;
-			cursor: pointer;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
 		}
-	}
 
-	img{
-		width: 100%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 	}
-
-}
 
 /*
 	//////////	main-catalog

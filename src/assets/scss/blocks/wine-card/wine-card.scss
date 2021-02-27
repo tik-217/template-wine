@@ -1,0 +1,116 @@
+.card{
+	display: flex;
+	margin: 40px 0 0;
+	justify-content: center;
+
+	.card_wrap{
+		position: relative;
+	}
+
+	.card_slide-goods{
+
+		div{
+			height: 500px !important;
+
+			img{
+				height: auto !important;
+			}
+		}
+	}
+
+	.card_slide-button{
+		position: absolute;
+		left: 350px;
+		bottom: 0;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.slick-track{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		img{
+			height: 20px !important;
+			width: 20px !important;
+			margin: 0 0 8px;
+			cursor: pointer;
+		}
+	}
+
+	.card_sidebar{
+		width: 87%;
+		margin: 0 0 0 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.card_sidebar_up{
+
+			div{
+				margin: 0 0 30px;
+
+				h5{
+					font-size: 22px;
+				}
+
+				img{
+					margin: 8px 0 0;
+				}
+			}
+		}
+
+		.card_sidebar_down{
+
+			section{
+				margin: 0 0 20px;
+				display: flex;
+				flex-direction: column;
+
+				span{
+					font-size: 20px;
+					position: relative;
+					display: inline-block;
+					margin: 0 0 10px;
+					width: min-content;
+					white-space: nowrap;
+
+					&:before{
+						content: '';
+						width: 100%;
+						height: 2px;
+						background: $border-bottom;
+						display: block;
+						bottom: -5px;
+						position: absolute;
+					}
+				}
+
+				input{
+					width: 10%;
+					margin: 0 0 0 25px;
+					border: none;
+					outline: none;
+				}
+			}
+
+			button{
+				outline: none;
+				border: none;
+				background: black;
+				padding: 7px 20px;
+				width: 100%;
+				cursor: pointer;
+
+				a{
+					text-decoration: none;
+					color: white;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

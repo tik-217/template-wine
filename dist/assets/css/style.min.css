@@ -366,6 +366,26 @@ table {
   .about-us_our-worker_main-image img {
     height: 200px !important; } }
 
+@media screen and (max-width: 750px) {
+  .card_sidebar_up {
+    margin: 20px auto 0; }
+    .card_sidebar_up div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .card_sidebar_up p {
+      margin: 0 0 20px; }
+  .card {
+    align-items: center;
+    flex-direction: column; }
+  .card_sidebar {
+    margin: 0 !important; } }
+
+@media screen and (max-width: 500px) {
+  .card_slide-goods div {
+    height: 500px !important;
+    width: 300px !important; } }
+
 .common-header {
   background: #c8b87f;
   color: white; }
@@ -638,22 +658,15 @@ footer {
 /*
 	//////////	main-common
 */
-/*
-	main-gallery
-*/
 .gallery-slider img {
   height: 250px; }
 
-/* slide */
-.slick-active {
+.gallery-slider .slick-active {
   outline: none; }
 
-.slick-slide {
+.gallery-slider .slick-slide {
   padding: 0 5px; }
 
-/*
-	//////////	main-gallery
-*/
 /*
     main-proba
 */
@@ -714,7 +727,7 @@ footer {
 */
 /*
 	main-catalog
-*/
+	*/
 .catalog-cart_section {
   display: flex;
   justify-content: space-around;
@@ -756,6 +769,9 @@ footer {
       background: #000;
       color: white;
       cursor: pointer; }
+      .catalog-cart_section div button a {
+        color: white;
+        text-decoration: none; }
   .catalog-cart_section img {
     width: 100%;
     height: auto;
@@ -1038,3 +1054,79 @@ footer {
       font-weight: 600; }
     .contatcts_addres div p {
       max-width: 80%; }
+
+/* Blocks wine-card */
+.card {
+  display: flex;
+  margin: 40px 0 0;
+  justify-content: center; }
+  .card .card_wrap {
+    position: relative; }
+  .card .card_slide-goods div {
+    height: 500px !important; }
+    .card .card_slide-goods div img {
+      height: auto !important; }
+  .card .card_slide-button {
+    position: absolute;
+    left: 350px;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card .card_slide-button .slick-track {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .card .card_slide-button img {
+      height: 20px !important;
+      width: 20px !important;
+      margin: 0 0 8px;
+      cursor: pointer; }
+  .card .card_sidebar {
+    width: 87%;
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .card .card_sidebar .card_sidebar_up div {
+      margin: 0 0 30px; }
+      .card .card_sidebar .card_sidebar_up div h5 {
+        font-size: 22px; }
+      .card .card_sidebar .card_sidebar_up div img {
+        margin: 8px 0 0; }
+    .card .card_sidebar .card_sidebar_down section {
+      margin: 0 0 20px;
+      display: flex;
+      flex-direction: column; }
+      .card .card_sidebar .card_sidebar_down section span {
+        font-size: 20px;
+        position: relative;
+        display: inline-block;
+        margin: 0 0 10px;
+        width: min-content;
+        white-space: nowrap; }
+        .card .card_sidebar .card_sidebar_down section span:before {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: #6C3D38;
+          display: block;
+          bottom: -5px;
+          position: absolute; }
+      .card .card_sidebar .card_sidebar_down section input {
+        width: 10%;
+        margin: 0 0 0 25px;
+        border: none;
+        outline: none; }
+    .card .card_sidebar .card_sidebar_down button {
+      outline: none;
+      border: none;
+      background: black;
+      padding: 7px 20px;
+      width: 100%;
+      cursor: pointer; }
+      .card .card_sidebar .card_sidebar_down button a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase; }

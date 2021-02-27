@@ -334,3 +334,46 @@
 		}
 	}
 }
+
+@media screen and (max-width: 750px){
+	.card_sidebar_up{
+		margin: 20px auto 0;
+
+		div{	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		p{
+			margin: 0 0 20px;
+		}
+	}
+
+	.card{
+		align-items: center;
+		flex-direction: column;
+
+		// .card_slide-goods{
+		// 	div{
+		// 		img{
+
+		// 		}
+		// 	}
+		// }
+	}
+
+	.card_sidebar{
+		margin: 0 !important;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.card_slide-goods{
+
+		div{
+			height: 500px !important;
+			width: 300px !important;
+		}
+	}
+}
