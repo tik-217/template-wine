@@ -350,6 +350,18 @@ table {
     .wrap-slider .proba_content_slider div section p {
       padding-left: 0; } }
 
+@media screen and (max-width: 770px) {
+  .about-us_text div {
+    min-width: 50%; }
+    .about-us_text div:first-child {
+      border-radius: 3px 3px 0 0 !important; }
+    .about-us_text div:last-child {
+      border-radius: 0 0 3px 3px !important; } }
+
+@media screen and (max-width: 380px) {
+  .about-us_our-worker_main-image img {
+    height: 200px !important; } }
+
 .common-header {
   background: #c8b87f;
   color: white; }
@@ -885,3 +897,118 @@ footer {
       width: 20px !important;
       margin: 0 0 8px;
       cursor: pointer; }
+
+/* Blocks about-us */
+.about-us_text {
+  display: flex;
+  flex-wrap: wrap; }
+  .about-us_text div {
+    flex: 1;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .about-us_text div:first-child {
+    background: black;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px 0 0 3px; }
+    .about-us_text div:first-child h4 {
+      margin: 0 0 40px;
+      font-size: 22px;
+      position: relative;
+      display: inline-block;
+      font-style: italic; }
+      .about-us_text div:first-child h4:before {
+        content: '';
+        background: #A82525;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -7px; }
+    .about-us_text div:first-child p {
+      width: 80%;
+      margin: 0 auto; }
+  .about-us_text div:last-child {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .about-us_text div:last-child h4 {
+      margin: 0 0 40px;
+      font-size: 22px;
+      font-style: italic;
+      position: relative;
+      display: inline-block; }
+      .about-us_text div:last-child h4:before {
+        content: '';
+        background: #A82525;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -7px; }
+    .about-us_text div:last-child input {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 15px;
+      width: 70%;
+      outline: none;
+      border: 1px solid #c4c4c4;
+      border-radius: 3px;
+      background: url("../images/icons/arrow.svg") no-repeat 3px;
+      background-size: auto 40%;
+      background-position-y: center;
+      background-position-x: right;
+      background-origin: content-box; }
+      .about-us_text div:last-child input::placeholder {
+        text-transform: capitalize; }
+
+.about-us_our-worker {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .about-us_our-worker h4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+    font-style: italic;
+    position: relative;
+    display: inline-block; }
+    .about-us_our-worker h4:before {
+      content: '';
+      background: #A82525;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -7px; }
+  .about-us_our-worker .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .about-us_our-worker .wrap .about-us_our-worker_main-image {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      .about-us_our-worker .wrap .about-us_our-worker_main-image img {
+        height: 250px;
+        width: auto;
+        margin: 0 auto 20px;
+        border-radius: 50%; }
+      .about-us_our-worker .wrap .about-us_our-worker_main-image p {
+        width: 80%;
+        margin-bottom: 80px; }
+    .about-us_our-worker .wrap .about-us_our-worker_other {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .about-us_our-worker .wrap .about-us_our-worker_other div {
+        margin: 0 35px 35px;
+        text-align: center; }
+        .about-us_our-worker .wrap .about-us_our-worker_other div img {
+          height: 150px;
+          border-radius: 50%; }
+        .about-us_our-worker .wrap .about-us_our-worker_other div p {
+          width: 150px; }

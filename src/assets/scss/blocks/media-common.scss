@@ -310,3 +310,27 @@
 		}
 	}
 }
+
+@media screen and (max-width: 770px){
+	.about-us_text{
+		div{
+			min-width: 50%;
+
+			&:first-child{
+				border-radius: 3px 3px 0 0 !important;
+			}
+
+			&:last-child{
+				border-radius: 0 0 3px 3px !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px){
+	.about-us_our-worker_main-image{
+		img{
+			height: 200px !important;
+		}
+	}
+}
