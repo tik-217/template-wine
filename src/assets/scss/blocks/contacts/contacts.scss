@@ -1,0 +1,28 @@
+.wrap{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 40px;
+}
+
+.contatcts_addres{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 0 20px;
+
+	div{
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 10px;
+
+		h5{
+			font-size: 16px;
+			margin: 0 0 5px;
+			font-weight: 600;
+		}
+
+		p{
+			max-width: 80%;
+		}
+	}
+}

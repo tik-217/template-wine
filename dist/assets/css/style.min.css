@@ -32,6 +32,10 @@ body {
   font-weight: 500;
   font-size: 32px; }
 
+.common-header_wrapper_title a, .flex-title-mob a {
+  text-decoration: none;
+  color: white; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -287,7 +291,7 @@ table {
 /*
 //////////	media-main*/
 @media screen and (max-width: 550px) {
-  .wrap {
+  .ctl-wrap {
     display: flex;
     flex-direction: column; }
   .ctl-content_section-under_title {
@@ -763,7 +767,7 @@ footer {
 	//////////	main-catalog
 */
 /* Blocks catalog */
-.wrap {
+.ctl-wrap {
   display: flex; }
 
 .ctl-content_section-title {
@@ -1012,3 +1016,25 @@ footer {
           border-radius: 50%; }
         .about-us_our-worker .wrap .about-us_our-worker_other div p {
           width: 150px; }
+
+/* Blocks contacts */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px; }
+
+.contatcts_addres {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 20px; }
+  .contatcts_addres div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px; }
+    .contatcts_addres div h5 {
+      font-size: 16px;
+      margin: 0 0 5px;
+      font-weight: 600; }
+    .contatcts_addres div p {
+      max-width: 80%; }

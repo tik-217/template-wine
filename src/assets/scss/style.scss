@@ -41,6 +41,13 @@ body{
 	font-size: 32px;
 }
 
+.common-header_wrapper_title, .flex-title-mob{
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
+
 // @import "node_modules/normalize.css/normalize.scss";
 @import "node_modules/reset-css/sass/_reset.scss";
 @import "node_modules/slick-carousel/slick/slick.scss";
@@ -65,3 +72,6 @@ body{
 
 /* Blocks about-us */
 @import "blocks/about-us/about-us.scss";
+
+/* Blocks contacts */
+@import "blocks/contacts/contacts.scss";
