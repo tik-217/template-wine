@@ -274,12 +274,14 @@
 }
 
 @media screen and (max-width: 1200px){
-	.wrap-slider .proba_content_slider div{
+
+	.proba_content_slider div{
 
 		img{
 			position: absolute;
 			z-index: -1;
-			width: 100%;
+			width: 100vw;
+			height: 100vh;
 		}
 
 		section{

@@ -334,13 +334,14 @@ table {
     width: 80% !important; } }
 
 @media screen and (max-width: 1200px) {
-  .wrap-slider .proba_content_slider div img {
+  .proba_content_slider div img {
     position: absolute;
     z-index: -1;
-    width: 100%; }
-  .wrap-slider .proba_content_slider div section {
+    width: 100vw;
+    height: 100vh; }
+  .proba_content_slider div section {
     background: rgba(0, 0, 0, 0.5) !important; }
-    .wrap-slider .proba_content_slider div section p {
+    .proba_content_slider div section p {
       padding-left: 50%; } }
 
 @media screen and (max-width: 650px) {
@@ -853,9 +854,10 @@ footer {
   .wrap-slider .proba_content_slider .slick-slide {
     padding: 0; }
   .wrap-slider .proba_content_slider div {
+    height: 500px !important;
     transition: all .5s ease; }
     .wrap-slider .proba_content_slider div img {
-      height: 100% !important;
+      height: 500px !important;
       float: left; }
     .wrap-slider .proba_content_slider div .proba_content_slider_slides_description {
       box-sizing: border-box;
