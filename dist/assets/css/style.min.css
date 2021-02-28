@@ -1195,3 +1195,63 @@ footer {
     .not-found_wrap div:last-child span {
       font-size: 20px;
       font-weight: bold; }
+
+/* Blocks login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 60px; }
+  .login .login_wrap {
+    background: #383941;
+    width: 500px;
+    border-radius: 3px;
+    padding: 40px 50px; }
+    .login .login_wrap .login_wrap_input-data {
+      margin: 0 0 50px; }
+      .login .login_wrap .login_wrap_input-data section {
+        display: flex;
+        flex-direction: column; }
+        .login .login_wrap .login_wrap_input-data section span {
+          color: #CBCBCB;
+          margin: 0 0 5px; }
+        .login .login_wrap .login_wrap_input-data section input {
+          background: white;
+          padding: 12px 20px;
+          border-radius: 2px;
+          border: none;
+          margin: 0 0 10px;
+          outline: none; }
+      .login .login_wrap .login_wrap_input-data button {
+        width: 100%;
+        border: none;
+        background: #C8B87F;
+        color: white;
+        outline: none;
+        margin: 0 auto;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        display: block;
+        border-radius: 2px;
+        cursor: pointer; }
+        .login .login_wrap .login_wrap_input-data button a {
+          color: white; }
+    .login .login_wrap .login_wrap_below {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .login .login_wrap .login_wrap_below a {
+        color: #CBCBCB; }
+      .login .login_wrap .login_wrap_below button {
+        border: none;
+        background: #C8B87F;
+        color: white;
+        outline: none;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        display: block;
+        border-radius: 2px;
+        cursor: pointer; }
+        .login .login_wrap .login_wrap_below button a {
+          color: white;
+          text-transform: uppercase; }
