@@ -41,11 +41,8 @@ body{
 	font-size: 32px;
 }
 
-.common-header_wrapper_title, .flex-title-mob{
-	a{
-		text-decoration: none;
-		color: white;
-	}
+a{
+	text-decoration: none;
 }
 
 // @import "node_modules/normalize.css/normalize.scss";
@@ -78,3 +75,6 @@ body{
 
 /* Blocks wine-card */
 @import "blocks/wine-card/wine-card.scss";
+
+/* Blocks page-not-found */
+@import "blocks/page-not-found/page-not-found.scss";

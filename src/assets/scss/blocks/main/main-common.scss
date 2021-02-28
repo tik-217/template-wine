@@ -1,75 +1,75 @@
 /*
 	main-common
-*/
+	*/
 
-.head_items{
-	height: 75vh;
-	max-height: 900px;
-	padding-top: 30px;
-	
-	background: url('../images/main-photo.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: center;
+	.head_items{
+		height: 75vh;
+		max-height: 900px;
+		padding-top: 30px;
 
-	a{
-		text-decoration-line: none;
-		color: white;
+		background: url('../images/main-photo.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: center;
+
+		a{
+			text-decoration-line: none;
+			color: white;
+		}
 	}
-}
 
-.head_items-wrapper{
-	height: 100%;
-	
-	.head_items-wrapper_up {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+	.head_items-wrapper{
+		height: 100%;
 
-		.head_items-wrapper_up_title{
-			font-style: italic;
-			font-weight: 500;
+		.head_items-wrapper_up {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 
-			h1{
-				font-size: 1.6em;
-			}
+			.head_items-wrapper_up_title{
+				font-style: italic;
+				font-weight: 500;
 
-			h1, li{
-				color: white;
+				h1{
+					font-size: 1.6em;
+				}
+
+				h1, li{
+					color: white;
+				}
 			}
 		}
 	}
-}
 
 
-.head_items-wrapper_up_menu{
-	display: flex;
-	padding: 0;
-	align-items: center;
-
-	ul{
+	.head_items-wrapper_up_menu{
 		display: flex;
-		height: fit-content;
-		list-style: none;
-		margin-right: 20px;
-		padding-left: 0px;
+		padding: 0;
+		align-items: center;
+
+		ul{
+			display: flex;
+			height: fit-content;
+			list-style: none;
+			margin-right: 20px;
+			padding-left: 0px;
+		}
 	}
-}
 
-.head_items-wrapper_up_menu a{
-	/*padding-left: 5px;*/
-	padding-right: 10px;
-	align-items: center;
-	font-size: 12px;
+	.head_items-wrapper_up_menu a{
+		/*padding-left: 5px;*/
+		padding-right: 10px;
+		align-items: center;
+		font-size: 12px;
 
-	text-transform: uppercase;
-	transition: color .3s ease;
-	font-weight: 500;
+		text-transform: uppercase;
+		transition: color .3s ease;
+		font-weight: 500;
 
-	&:after{
-		content: '';
-		width: 0;
-		height: 2px;
+		&:after{
+			content: '';
+			width: 0;
+			height: 2px;
 		// background: #A82525;
 		background: white;
 		opacity: 0;

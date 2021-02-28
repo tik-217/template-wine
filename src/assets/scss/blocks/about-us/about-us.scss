@@ -36,6 +36,7 @@
 		p{
 			width: 80%;
 			margin: 0 auto;
+			line-height: 150%;
 		}
 	}
 
@@ -112,16 +113,13 @@
 	}
 
 	.wrap{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-wrap: wrap;
 
 		.about-us_our-worker_main-image{
 			display: flex;
 			flex-direction: column;
 			text-align: center;
 			align-items: center;
+			// width: 100%;
 
 			img{
 				height: 250px;
@@ -131,6 +129,7 @@
 			}
 
 			p{
+				max-width: 490px;
 				width: 80%;
 				margin-bottom: 80px;
 			}

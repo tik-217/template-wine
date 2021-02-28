@@ -39,6 +39,11 @@ body {
     font-size: 32px;
 }
 
+.common-header_wrapper_title a, .flex-title-mob a {
+    text-decoration: none;
+    color: white;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -414,7 +419,7 @@ table {
 /*
 //////////	media-main*/
 @media screen and (max-width: 550px) {
-    .wrap {
+    .ctl-wrap {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -538,6 +543,43 @@ table {
 @media screen and (max-width: 380px) {
     .about-us_our-worker_main-image img {
         height: 200px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card_sidebar_up {
+        margin: 20px auto 0;
+    }
+
+    .card_sidebar_up div {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .card_sidebar_up p {
+        margin: 0 0 20px;
+    }
+
+    .card {
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .card_sidebar {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card_slide-goods div {
+        height: 500px !important;
+        width: 300px !important;
     }
 }
 
@@ -947,25 +989,18 @@ footer {
 /*
 	//////////	main-common
 */
-/*
-	main-gallery
-*/
 .gallery-slider img {
     height: 250px;
 }
 
-/* slide */
-.slick-active {
+.gallery-slider .slick-active {
     outline: none;
 }
 
-.slick-slide {
+.gallery-slider .slick-slide {
     padding: 0 5px;
 }
 
-/*
-	//////////	main-gallery
-*/
 /*
     main-proba
 */
@@ -1042,7 +1077,7 @@ footer {
 */
 /*
 	main-catalog
-*/
+	*/
 .catalog-cart_section {
     display: -ms-flexbox;
     display: flex;
@@ -1113,6 +1148,11 @@ footer {
     cursor: pointer;
 }
 
+.catalog-cart_section div button a {
+    color: white;
+    text-decoration: none;
+}
+
 .catalog-cart_section img {
     width: 100%;
     height: auto;
@@ -1125,7 +1165,7 @@ footer {
 	//////////	main-catalog
 */
 /* Blocks catalog */
-.wrap {
+.ctl-wrap {
     display: -ms-flexbox;
     display: flex;
 }
@@ -1526,3 +1566,189 @@ footer {
 }
 
 /* Blocks contacts */
+.wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 0 40px;
+}
+
+.contatcts_addres {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+}
+
+.contatcts_addres div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 0 10px;
+}
+
+.contatcts_addres div h5 {
+    font-size: 16px;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+
+.contatcts_addres div p {
+    max-width: 80%;
+}
+
+/* Blocks wine-card */
+.card {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px 0 0;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card .card_wrap {
+    position: relative;
+}
+
+.card .card_slide-goods div {
+    height: 500px !important;
+}
+
+.card .card_slide-goods div img {
+    height: auto !important;
+}
+
+.card .card_slide-button {
+    position: absolute;
+    left: 350px;
+    bottom: 0;
+    top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card .card_slide-button .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card .card_slide-button img {
+    height: 20px !important;
+    width: 20px !important;
+    margin: 0 0 8px;
+    cursor: pointer;
+}
+
+.card .card_sidebar {
+    width: 87%;
+    margin: 0 0 0 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.card .card_sidebar .card_sidebar_up div {
+    margin: 0 0 30px;
+}
+
+.card .card_sidebar .card_sidebar_up div h5 {
+    font-size: 22px;
+}
+
+.card .card_sidebar .card_sidebar_up div img {
+    margin: 8px 0 0;
+}
+
+.card .card_sidebar .card_sidebar_down section {
+    margin: 0 0 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.card .card_sidebar .card_sidebar_down section span {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.card .card_sidebar .card_sidebar_down section span:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #6C3D38;
+    display: block;
+    bottom: -5px;
+    position: absolute;
+}
+
+.card .card_sidebar .card_sidebar_down section input {
+    width: 10%;
+    margin: 0 0 0 25px;
+    border: none;
+    outline: none;
+}
+
+.card .card_sidebar .card_sidebar_down button {
+    outline: none;
+    border: none;
+    background: black;
+    padding: 7px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card .card_sidebar .card_sidebar_down button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Blocks page-not-found */
+.not-found_wrap {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.not-found_wrap div:first-child {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.not-found_wrap div:first-child ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.not-found_wrap div:last-child {
+    -ms-flex: 1;
+    flex: 1;
+}
