@@ -1324,3 +1324,52 @@ footer {
           background: #C8B87F;
           color: white;
           text-transform: uppercase; }
+
+/* Blocks search */
+.search {
+  display: flex;
+  margin: 60px 0 0; }
+  .search .search_wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px; }
+    .search .search_wrap input {
+      margin: 0 0 40px;
+      border: none;
+      padding: 12px 20px;
+      border-bottom: 1px solid #c8b87f;
+      outline: none;
+      background: url("../images/icons/icons8-search-black.svg") no-repeat 3px;
+      background-size: auto 100%;
+      background-position-y: center;
+      background-position-x: right;
+      background-origin: content-box; }
+    .search .search_wrap section h4 {
+      font-size: 20px;
+      margin: 0 0 30px;
+      font-weight: bold; }
+    .search .search_wrap section ul {
+      margin-left: 20px;
+      list-style: decimal; }
+      .search .search_wrap section ul li {
+        margin: 0 0 20px;
+        text-decoration: underline; }
+  .search .faq {
+    flex: 1;
+    margin: 0 0 60px 60px; }
+    .search .faq section {
+      background: #383941;
+      padding: 40px;
+      color: white; }
+      .search .faq section h4 {
+        font-size: 20px;
+        margin: 0 0 30px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize; }
+      .search .faq section ul {
+        margin-left: 20px;
+        list-style: decimal; }
+        .search .faq section ul li {
+          margin: 0 0 20px; }
