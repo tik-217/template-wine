@@ -946,7 +946,7 @@ footer {
 .slick-slide:focus {
   outline: none; }
 
-/* Blocks page-not-found */
+/* Blocks 404 */
 .not-found_wrap {
   display: flex; }
   .not-found_wrap div:first-child {
