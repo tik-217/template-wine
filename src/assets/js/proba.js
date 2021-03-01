@@ -10,12 +10,6 @@ $(function(){
 		swipe: false,
 		dots: false,
 		asNavFor: '.proba_content_slider_slides_circle',
-		// responsive: [
-		// {
-		// 	breakpoint: 1200,
-		// 	settings: {
-		// 	}
-		// },
 	});
 
 	$('.proba_content_slider_slides_circle').slick({

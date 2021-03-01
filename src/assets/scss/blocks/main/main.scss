@@ -1,0 +1,182 @@
+/* main-common */
+
+.head_items{
+	height: 75vh;
+	max-height: 900px;
+	padding-top: 30px;
+
+	background: url('../images/main-photo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+
+	a{
+		text-decoration-line: none;
+		color: white;
+	}
+}
+
+.head_items-wrapper{
+	height: 100%;
+
+	.head_items-wrapper_up {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.head_items-wrapper_up_title{
+			font-style: italic;
+			font-weight: 500;
+
+			h1{
+				font-size: 1.6em;
+			}
+
+			h1, li{
+				color: white;
+			}
+		}
+	}
+}
+
+
+.head_items-wrapper_up_menu{
+	display: flex;
+	padding: 0;
+	align-items: center;
+
+	ul{
+		display: flex;
+		height: fit-content;
+		list-style: none;
+		margin-right: 20px;
+		padding-left: 0px;
+	}
+}
+
+.head_items-wrapper_up_menu a{
+	padding-right: 10px;
+	align-items: center;
+	font-size: 12px;
+
+	text-transform: uppercase;
+	transition: color .3s ease;
+	font-weight: 500;
+
+	&:after{
+		content: '';
+		width: 0;
+		height: 2px;
+		background: white;
+		opacity: 0;
+		display: list-item;
+		transition: all .5s ease;
+	}
+
+	&:hover:after{
+		opacity: 1;
+		width: 100%;
+	}
+
+}
+
+.head_items-wrapper_up_menu_icons{
+
+	a:after{
+		display: none;
+	}
+	
+	img{
+		height: 25px;
+	}
+}
+
+.head_items-wrapper-main_text{
+	display: flex;
+	align-items: center;
+	height: calc(100% - 42px);
+	
+	p{
+		color: white;
+		max-width: 750px;
+		font-size: 17px;
+		font-style: italic;
+	}
+}
+
+.gallery-slider{
+
+	img{
+		height: 250px;
+	}
+
+	.slick-active{
+		outline: none;
+	}
+
+	.slick-slide{
+		padding: 0 5px;
+	}
+}
+
+.proba-info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.proba-info-section{
+	margin-bottom: 40px;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+.proba-info-section-wrapper {
+	position: relative;
+}
+
+.proba-info-section-wrapper div {
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	overflow: hidden;
+	width: 11em;
+	height: 11em;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.proba-info-section-wrapper div:after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+}
+
+.proba-info-section-wrapper div > img{
+	height: 250px;
+	width: 100%;
+}
+
+.proba-info-section-wrapper-overflow_img{
+	margin: auto;
+	position: absolute;
+	overflow: auto;
+	height: 60px;
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.proba-info p{
+	text-align: center;
+	margin: 20px 20px 0;
+	line-height: 140%;
+	max-width: 400px;
+}

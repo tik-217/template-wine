@@ -9,7 +9,6 @@ $(function(){
 		focusOnSelect: false,
 		swipe: false,
 		dots: false,
-		mobileFirst: true,
 		asNavFor: '.card_slide-button',
 	});
 
@@ -18,6 +17,6 @@ $(function(){
 		swipe: false,
 		vertical: true,
 		asNavFor: '.card_slide-goods',
-		focusOnSelect: true
+		focusOnSelect: false,
 	});
 });

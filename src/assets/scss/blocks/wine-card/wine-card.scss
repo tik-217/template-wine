@@ -1,52 +1,54 @@
 .card{
 	display: flex;
-	margin: 40px 0 0;
-	justify-content: center;
+	margin: 40px auto 0;
+	max-width: 80%;
 
 	.card_wrap{
 		position: relative;
-	}
 
-	.card_slide-goods{
+		.card_slide-goods{
 
-		div{
-			height: 500px !important;
+			div{
+				max-height: 500px !important;
+				max-width: 400px !important;
+
+				img{
+					height: auto !important;
+					max-width: 400px !important;
+				}
+			}
+		}
+
+		.card_slide-button{
+			position: absolute;
+			left: 350px;
+			bottom: 0;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.slick-track{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
 
 			img{
-				height: auto !important;
+				height: 20px !important;
+				width: 20px !important;
+				margin: 0 0 8px;
+				cursor: pointer;
 			}
 		}
 	}
 
-	.card_slide-button{
-		position: absolute;
-		left: 350px;
-		bottom: 0;
-		top: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		.slick-track{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		img{
-			height: 20px !important;
-			width: 20px !important;
-			margin: 0 0 8px;
-			cursor: pointer;
-		}
-	}
-
 	.card_sidebar{
-		width: 87%;
-		margin: 0 0 0 50px;
-		display: flex;
-		flex-direction: column;
 		justify-content: space-between;
+		flex-direction: column;
+		display: flex;
+		margin: 0 0 0 50px;
+		width: 87%;
 
 		.card_sidebar_up{
 
@@ -100,17 +102,25 @@
 			button{
 				outline: none;
 				border: none;
-				background: black;
-				padding: 7px 20px;
+				background: none;
 				width: 100%;
-				cursor: pointer;
+				padding: 0;
 
 				a{
+					background: black;
+					padding: 7px 20px;
+					cursor: pointer;
 					text-decoration: none;
 					color: white;
+					display: block;
 					text-transform: uppercase;
 				}
 			}
 		}
 	}
+}
+
+.slick-slide:active,
+.slick-slide:focus {
+	outline: none;
 }

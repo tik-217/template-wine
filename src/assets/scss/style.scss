@@ -50,16 +50,13 @@ a{
 @import "node_modules/slick-carousel/slick/slick.scss";
 
 // common style
-@import "blocks/media-common.scss";
 @import "blocks/new-header.scss";
 @import "blocks/feedback.scss";
+@import "blocks/three-wine-cards.scss";
 @import "blocks/footer.scss";
 
 /* Blocks main */
-@import "blocks/main/main-common.scss";
-@import "blocks/main/main-gallery.scss";
-@import "blocks/main/main-proba.scss";
-@import "blocks/main/main-catalog.scss";
+@import "blocks/main/main.scss";
 
 /* Blocks catalog */
 @import "blocks/catalog/ctl-content.scss";
@@ -87,3 +84,9 @@ a{
 
 /* Blocks search */
 @import "blocks/search/search.scss";
+
+/* Blocks basket */
+@import "blocks/basket/basket.scss";
+
+/* Blocks media-common */
+@import "blocks/media-common.scss";

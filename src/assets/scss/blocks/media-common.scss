@@ -1,25 +1,11 @@
-/*
-	//////////	media-main
-	*/
+@media screen and (min-width: 1070px){
+	.head_items-wrapper_up_menu_mob{
+		display: none;
+	}
 
-	/*1036*/
-
-	@media screen and (min-width: 1070px){
-		/* header */
-
-		.head_items-wrapper_up_menu_mob{
-			display: none;
-		}
-
-		.head_items-wrapper_up_menu, .common-header_wrapper_menu{
-			display: flex;
-		}
-
-	/*
-
-	////  header  /////
-
-	*/
+	.head_items-wrapper_up_menu, .common-header_wrapper_menu{
+		display: flex;
+	}
 }
 
 @media screen and (max-width: 995px){
@@ -38,7 +24,7 @@
 
 	.head_items-wrapper_up_menu_mob{
 		display: flex;
-		
+
 		img{
 			height: 25px;
 		}
@@ -50,7 +36,7 @@
 			display: flex;
 			position: absolute;
 
-			top: -460px;
+			top: -480px;
 			text-align:center;
 			right: 5%;
 			width: 250px;
@@ -168,12 +154,6 @@
 		}
 	}
 
-	/*
-
-	////  header  /////
-
-	*/
-
 	.login_wrap, .sign-up_wrap{
 		max-width: 50% !important;
 
@@ -190,25 +170,17 @@
 }
 
 @media screen and (max-width: 1040px){
-
-	/* proba */
-	
 	.proba-info-section {
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 460px){
-	/* footer */
-
 	.flex-title-mob{
 		line-height: 110%;
 		text-align: center;
 	}
 }
-
-/*
-//////////	media-main*/
 
 @media screen and (max-width: 550px){
 	.ctl-wrap{
@@ -352,21 +324,7 @@
 	}
 }
 
-@media screen and (max-width: 750px){
-	.card_sidebar_up{
-		margin: 20px auto 0;
-
-		div{	
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-
-		p{
-			margin: 0 0 20px;
-		}
-	}
-
+@media screen and (max-width: 1000px){
 	.card{
 		align-items: center;
 		flex-direction: column;
@@ -374,6 +332,40 @@
 
 	.card_sidebar{
 		margin: 0 !important;
+
+		.card_sidebar_up{
+			margin: 20px auto 0;
+
+			div{	
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			p{
+				margin: 0 0 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px){
+
+	.search{
+		flex-direction: column;
+
+		.search_wrap, .faq{
+
+		}
+
+		.search_wrap{
+			margin-right: 0;
+		}
+
+		.faq{
+			margin-top: 30px;
+			margin-left: 0;
+		}
 	}
 }
 
@@ -381,8 +373,38 @@
 	.card_slide-goods{
 
 		div{
-			height: 500px !important;
-			width: 300px !important;
+			height: 350px !important;
+			width: 250px !important;
+
+			img{
+				width: 250px !important;
+			}
 		}
+	}
+}
+
+@media screen and (max-width: 880px){
+	.basket_wrap{
+		flex-direction: column;
+
+		.assistant-field{
+			margin-right: 0;
+		}
+
+		.basket_wrap_choosen-goods_result{
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 400px){
+	.basket_wrap_choosen-goods_field{
+		justify-content: flex-end !important;
+		text-align: right;
+	}
+
+	.basket_wrap_choosen-goods_cost{
+		position: relative;
+		bottom: -20px;
 	}
 }
