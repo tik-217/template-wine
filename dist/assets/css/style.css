@@ -1416,6 +1416,11 @@ footer {
     display: flex;
 }
 
+.not-found_wrap div {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .not-found_wrap div:first-child {
     display: -ms-flexbox;
     display: flex;
