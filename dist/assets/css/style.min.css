@@ -622,7 +622,8 @@ footer {
       padding: 0 0 0 25px;
       list-style: none;
       cursor: pointer; }
-      .ctl-content_wrapper_sidebar section ul .change-color:after, .ctl-content_wrapper_sidebar section ul .constantly-color:after {
+      .ctl-content_wrapper_sidebar section ul .change-color:after,
+      .ctl-content_wrapper_sidebar section ul .constantly-color:after {
         content: '';
         height: 7px;
         width: 7px;
@@ -663,7 +664,8 @@ footer {
       width: 100%; }
     .ctl-content_wrapper_carts div section {
       padding: 20px 15px 0; }
-      .ctl-content_wrapper_carts div section h3, .ctl-content_wrapper_carts div section p {
+      .ctl-content_wrapper_carts div section h3,
+      .ctl-content_wrapper_carts div section p {
         margin-bottom: 20px; }
       .ctl-content_wrapper_carts div section h3 {
         text-align: center;
@@ -682,15 +684,18 @@ footer {
         .ctl-content_wrapper_carts div section section span:last-child {
           color: green; }
     .ctl-content_wrapper_carts div button {
-      width: 100%;
       border: none;
-      padding: 15px 20px;
       outline: none;
-      text-transform: uppercase;
-      font-size: 13px;
-      background: #000;
-      color: white;
-      cursor: pointer; }
+      background: none;
+      padding: 0; }
+      .ctl-content_wrapper_carts div button a {
+        text-transform: uppercase;
+        font-size: 13px;
+        background: #000;
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none; }
 
 /* Blocks proba */
 .wrap-slider {
@@ -1155,7 +1160,8 @@ footer {
       background-size: auto 100%;
       background-position-y: center;
       background-position-x: right;
-      background-origin: content-box; }
+      background-origin: content-box;
+      border-radius: 0px; }
     .search .search_wrap section h4 {
       font-size: 20px;
       margin: 0 0 30px;
