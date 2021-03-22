@@ -549,18 +549,18 @@ table {
 }
 
 .catalog-cart_section div button {
-    width: 100%;
     border: none;
-    padding: 15px 20px;
     outline: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    background: #000;
-    color: white;
-    cursor: pointer;
+    background: none;
+    padding: 0;
 }
 
 .catalog-cart_section div button a {
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #000;
+    display: block;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
@@ -573,9 +573,6 @@ table {
     display: block;
 }
 
-/*
-	main-footer
-	*/
 footer {
     background: #383941;
     color: white;
@@ -608,7 +605,8 @@ footer {
     margin: 0 15px 20px;
 }
 
-.link-in-footer div span, .link-in-footer div a {
+.link-in-footer div span,
+    .link-in-footer div a {
     padding-top: 5px;
     color: #CBCBCB;
 }
@@ -629,6 +627,10 @@ footer {
     justify-content: space-between;
 }
 
+.link-in-footer div:last-child a {
+    display: inline-table;
+}
+
 .link-in-footer div img {
     height: 22px;
 }
@@ -636,11 +638,23 @@ footer {
 .lower-part-of-the-basement {
     background: white;
     color: #a1a1a1;
-    display: -ms-flexbox;
-    display: flex;
+    height: 40px;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lower-part-of-the-basement .lower-part-of-the-basement_wrap {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -654,9 +668,6 @@ footer {
     text-transform: uppercase;
 }
 
-/*
-	//////////	main-footer
-*/
 /* Blocks main */
 /* main-common */
 .head_items {
@@ -1724,6 +1735,7 @@ footer {
     background-position-y: center;
     background-position-x: right;
     background-origin: content-box;
+    border-radius: 0px;
 }
 
 .search .search_wrap section h4 {
@@ -1761,6 +1773,7 @@ footer {
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
+    line-height: 150%;
 }
 
 .search .faq section ul {
