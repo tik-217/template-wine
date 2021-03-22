@@ -1426,8 +1426,8 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -ms-flex: 2;
     flex: 2;
     position: relative;
@@ -1441,13 +1441,11 @@ footer {
 .not-found_wrap div:first-child p {
     position: absolute;
     top: 40px;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     display: block;
     font-size: 20px;
-    width: 500px;
+    width: 50%;
     text-align: center;
     line-height: 150%;
     color: white;
@@ -1496,7 +1494,7 @@ footer {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 40px 0;
     -ms-flex: 1;
     flex: 1;
     background: conic-gradient(from 206.52deg at 100% 0%, #FFFFFF 0deg, #E0E0E0 359.98deg, rgba(241, 241, 241, 0) 360deg);
@@ -2228,6 +2226,35 @@ footer {
     }
 }
 
+@media screen and (max-width: 930px) {
+    .not-found_wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .not-found_wrap:first-child {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .not-found_wrap:first-child p {
+        position: initial !important;
+        margin: 0 0 30px;
+    }
+
+    .not-found_wrap:last-child {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .make-the-order {
         display: -ms-flexbox;
@@ -2301,6 +2328,28 @@ footer {
 
     .wrap-slider .proba_content_slider div section p {
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .not-found_wrap {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .not-found_wrap div {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .not-found_wrap div:first-child {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 80vh;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
     }
 }
 
