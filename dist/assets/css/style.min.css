@@ -465,7 +465,7 @@ footer {
   height: 75vh;
   max-height: 900px;
   padding-top: 30px;
-  background: url("../images/main-photo.jpg");
+  background: #c8b87f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center; }
@@ -565,14 +565,6 @@ footer {
   height: 11em;
   margin: 0 auto;
   border-radius: 50%; }
-
-.proba-info-section-wrapper div:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute; }
 
 .proba-info-section-wrapper div > img {
   height: 250px;
